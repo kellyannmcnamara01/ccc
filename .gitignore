@@ -1,0 +1,8 @@
+
+public/style/.sass-cache/
+/.sass-cache
+/node_modules
+Gruntfile.js
+public/style/*.map
+.project
+**/.DS_Store
