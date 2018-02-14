@@ -1,0 +1,130 @@
+/* =============== 01. Attributes =============== */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+	margin: 0 auto;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+body {
+	font-size: 62.5%;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	text-rendering: geometricPrecision;
+	background-image: url('images/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;;
+	background-position: center center;
+	min-height: 100vh;
+	position: relative;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper {
+	max-width: 960px;
+	width: 100%;
+	background: #fff;
+	/*margin: 50px;*/
+	/*position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+}
+.logo {
+	background-color: #daf1ff;
+	padding: 75px;
+}
+.logo img {
+	max-width: 360px;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+.info {
+	padding: 35px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.copy {
+	margin-left: 0;
+}
+.copy h1 {
+	color: #004684;
+	font-size: 1.2rem;
+}
+.copy p {
+	padding-top: 1rem;
+}
+.contact {
+	margin-right: 0;
+}
+p, p a {
+	color: #004684;
+	font-size: 0.9rem;
+	max-width: 340px;
+	margin: 0;
+	/*text-decoration: none;*/
+	position: relative;
+}
+p a {
+	z-index: 1;
+}
+p a::after {
+	content: '';
+	display: block;
+	width: 0%;
+	height: 104%;
+	background-color: #eded7c;
+	position: absolute;
+	top: -2%;
+	left: -2%;
+	z-index: -1;
+	transition: 0.35s cubic-bezier(.33,-0.01,.56,1.18);
+}
+p a:hover, p a:active, p a:focus {
+	outline: none;
+}
+p a:hover::after, p a:active::after, p a:focus::after {
+	width: 104%;
+}
+@media (max-width: 760px) {
+	.contact {
+		width: 100%;
+		margin-right: auto;
+		padding-top: 35px;
+	}
+}
+@media (max-width: 600px) {
+	body {
+		padding: 25px;
+	}
+	.logo {
+		padding: 40px 40px 50px;
+	}
+	.info {
+		padding: 25px;
+	}
+}
+
+@media (max-width: 320px) {
+	.logo {
+		padding: 25px 25px 35px;
+	}
+}
+
+
+
+
+
+
+
